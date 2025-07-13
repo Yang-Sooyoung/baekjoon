@@ -1,4 +1,4 @@
-name: dispatch_action
+name: Dispatch
 
 on:
  workflow_dispatch:
@@ -13,7 +13,7 @@ jobs:
  dispatch:
    runs-on: ubuntu-latest
    steps:
-     - name: Trigger repository dispatch
+     - name: Repository Dispatch
        uses: peter-evans/repository-dispatch@v1
        with:
          token: ${{ secrets.GH_PAT }}
